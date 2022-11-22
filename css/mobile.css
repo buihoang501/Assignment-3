@@ -1,0 +1,346 @@
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  /* Banner */
+  .banner-title {
+    font-size: 32px;
+  }
+
+  /* End Banner */
+
+  /* Navbar mobile */
+
+  #nav-bar .container-fluid {
+    padding: 0;
+  }
+
+  .nav-link {
+    margin: 0;
+    display: block;
+    width: 100%;
+    max-width: initial;
+    border: none;
+    text-align: left;
+    padding: 16px 0 16px 32px;
+  }
+
+  .nav-link:first-child {
+    margin-top: 8px;
+  }
+
+  .nav-link:last-child {
+    border: none;
+    margin-bottom: 8px;
+  }
+
+  .nav-link:nth-child(4) {
+    margin-left: 0;
+  }
+
+  .nav-link:hover {
+    background-color: #eee;
+  }
+  /* End Navbar mobile */
+
+  /* About */
+  #about .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #target,
+  #personal-info {
+    padding: 85px 20px 32px 20px;
+  }
+
+  #target .section-title,
+  #personal-info .section-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  #target p {
+    font-size: 16px;
+  }
+  /* End About */
+
+  /* Job Info */
+
+  #job-info .container .sub-container h2 {
+    position: unset;
+    top: 0;
+  }
+
+  #job-info {
+    margin-top: 32px;
+  }
+
+  #job-info .container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    grid-template-rows: auto;
+  }
+
+  #job-info .container .experience,
+  #job-info .container .skill,
+  #job-info .container .language,
+  #job-info .container .activity,
+  #job-info .container .educate,
+  #job-info .container .favorite {
+    position: static;
+    margin-top: 0;
+    max-height: unset;
+  }
+
+  /* End Job Info */
+
+  /* Certificate */
+
+  #certificate {
+    margin-top: 16px;
+    padding: 32px 20px;
+  }
+
+  #certificate .section-title {
+    margin-bottom: 32px;
+  }
+
+  #certificate .sub-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0;
+  }
+  #certificate .sub-container::before {
+    display: none;
+  }
+  #certificate .sub-container > div:first-child:after {
+  }
+
+  #certificate .sub-container > div {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  #certificate .sub-container > div > img,
+  #certificate .sub-container > div > div {
+    padding: 10px;
+  }
+
+  #certificate .sub-container h3 {
+    font-size: 14px;
+  }
+
+  #certificate .sub-container p {
+    font-size: 15px;
+  }
+
+  #certificate .sub-container > div:after,
+  #certificate .sub-container > div:first-child:after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background-color: #f03e3e;
+  }
+
+  /* End Certificate */
+
+  /* Project */
+  #project .sub-container {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+  #project .sub-container .label-box {
+    padding: 16px;
+  }
+  #project .sub-container .label-box span {
+    display: block;
+    max-width: 110px;
+    margin-bottom: 12px;
+  }
+  #project .sub-container .label-box span:last-child {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  #project .sub-container .label-box span:first-child {
+    max-width: 52px;
+  }
+  #project .sub-container table td:first-child {
+    width: 100px;
+  }
+  /* End Project */
+
+  /* Digital CV */
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .grid .title {
+    font-size: 28px;
+    margin: 20px;
+  }
+
+  /* Goals */
+  .goals {
+    grid-row: 1/2;
+    grid-column: 1/ -1;
+  }
+
+  .goals .content {
+    margin: 20px;
+  }
+
+  .goals .content-box {
+    flex-direction: column;
+  }
+
+  .goals .content-box {
+    padding: 12px;
+    color: #000;
+  }
+
+  .goals .content-box > p {
+    margin: 20px auto;
+  }
+
+  .goals .content-box > p > i {
+    font-size: 28px;
+  }
+
+  .goals .content-box > div > h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  /* End Goals */
+
+  /* Scopes */
+  .scopes {
+    grid-row: 2/3;
+    grid-column: 1/ -1;
+  }
+
+  .scopes .content {
+    margin: 20px;
+    flex-direction: column;
+    color: #000;
+  }
+
+  .scopes .content-box {
+    padding: 12px;
+  }
+
+  .scopes .content-box h4 {
+    font-size: 24px;
+  }
+
+  .scopes .content-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .scopes .content-box p:last-child {
+    margin-bottom: 0;
+  }
+  /* End Scopes */
+
+  /* Team */
+  .team {
+    grid-row: 3/4;
+    grid-column: 1/ -1;
+  }
+  .team .content {
+    margin: 20px;
+    color: #000;
+  }
+
+  .team .content-box {
+    flex-direction: column;
+    align-items: unset;
+    padding: 0 12px;
+  }
+
+  .team .content-box:last-child {
+    margin-bottom: 32px;
+  }
+
+  .team .content-box > p {
+    margin: 12px auto;
+  }
+
+  .team .content-box > p > i {
+    font-size: 24px;
+  }
+  .team .content-box > div > h3 {
+    font-size: 16px;
+  }
+
+  .team .content-box > div:last-child {
+  }
+  /* End Team */
+
+  /* Primary */
+  .primary {
+    grid-row: 4/5;
+    grid-column: 1/ -1;
+  }
+
+  .primary .content {
+    margin: 20px;
+    color: #000;
+  }
+
+  .primary .content-box {
+    padding: 0 12px;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .primary .content-box:last-child {
+    margin-bottom: 28px;
+  }
+
+  .primary .content-box > p {
+    margin: 16px auto;
+  }
+
+  .primary .content-box > p > i {
+    font-size: 24px;
+  }
+
+  /* End Primary */
+
+  .timeline {
+    grid-row: 5/6;
+    grid-column: 1/ -1;
+  }
+
+  .timeline .content {
+    margin: 20px 20px 10px 20px;
+    color: #000;
+  }
+
+  .timeline .content-box {
+    padding: 0 12px;
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 16px;
+  }
+
+  .timeline .content-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline .content-box > p {
+    margin: 16px 20px 0px 10px;
+    width: 50px;
+    height: 50px;
+    border-width: 2.5px;
+  }
+  .timeline .content-box > div > p:first-child {
+    font-weight: 700;
+  }
+
+  /* End Digital CV */
+}
+/* End Mobile Responsive */

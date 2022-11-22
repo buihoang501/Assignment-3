@@ -1,0 +1,852 @@
+/*Initial CSS */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #495057;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  margin: auto;
+  display: block;
+  padding: 30px 0;
+}
+
+/*END Initial CSS */
+
+/*BANNER CSS*/
+#banner {
+  width: 100%;
+  height: 759px;
+  position: relative;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+/* center to the horizontal of image */
+.banner-title,
+.banner-profession {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner-title {
+  top: 20%;
+  font-size: 44px;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.banner-profession {
+  top: 27%;
+  color: #ced4da;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+/*END BANNER CSS*/
+
+/* NAVBAR CSS*/
+#nav-bar {
+  text-align: center;
+}
+
+#nav-bar > .container {
+  width: auto;
+  padding: 0;
+}
+
+#nav-bar > .container {
+  padding: 0 50px;
+}
+
+.nav-info,
+.nav-title,
+.nav-link {
+  display: inline-block;
+}
+
+.nav-info {
+  position: relative;
+  padding: 16px 64px;
+  margin: 0 64px;
+}
+
+/* .nav-title {
+  margin-bottom: 4px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.nav-profession {
+  color: #ced4da;
+  font-size: 14px;
+} */
+
+/*Avatar profile CSS */
+
+.nav-info .nav-img {
+  position: absolute;
+  z-index: 100;
+  width: 180px;
+  height: 180px;
+  top: -60px;
+  left: 0;
+  background-color: #199cdb;
+  border-radius: 50%;
+  border: 10px solid #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-info .nav-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+/*End avatar profile CSS*/
+
+.nav-link {
+  text-decoration: none;
+  color: #495057;
+  max-width: 150px;
+  padding: 32px 16px;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  border-left: 2px solid #ced4da;
+  border-right: 2px solid #ced4da;
+  transition: color 0.25s ease-in-out;
+}
+
+.nav-link i {
+  color: #199cdb;
+}
+
+.nav-link:nth-child(odd) {
+  border-right: 0;
+}
+
+.nav-link:last-child {
+  border-left: 0;
+  border-right: 2px solid #ced4da;
+}
+
+.nav-link:nth-child(4) {
+  margin-left: 48px;
+}
+
+.nav-link:hover {
+  color: #199cdb;
+}
+
+/*END NAVBAR CSS*/
+
+/*ABOUT CSS*/
+#about .wrapper {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+#target {
+  background: #f7f7f7;
+  padding-left: 50%;
+  padding-right: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#target .section-title,
+#personal-info .section-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+#target p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#personal-info {
+  background-color: #e2e2e2;
+
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#personal-info .info {
+  padding-left: 0;
+  list-style: none;
+}
+
+#personal-info li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+#personal-info span {
+  font-weight: 500;
+}
+
+#personal-info .icon-container {
+  padding-top: 10px;
+}
+
+#personal-info .icon-container a {
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+#personal-info .icon-container i {
+  color: #199cdb;
+}
+/*END ABOUT CSS */
+
+/* JOB INFO CSS */
+#job-info {
+  margin-top: 64px;
+}
+
+/* three columns of grid */
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+}
+
+/* COMMON CSS for JOB/ACTIVE/EDUCATION */
+.job-description h3,
+.active-description h3,
+.education-description h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.job-description > div,
+.active-description > div,
+.education-description > div {
+  padding-left: 20px;
+  margin-bottom: 36px;
+}
+
+.job-description p,
+.active-description p,
+.education-description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #868e96;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.job-description p:last-child,
+.active-description p:last-child,
+.education-description p:last-child {
+  margin-bottom: 0;
+}
+
+.job-description > div:last-child,
+.active-description > div:last-child,
+.education-description > div:last-child {
+  margin-bottom: 0;
+}
+.education-description .job-description .italic,
+.active-description .italic,
+.education-description .italic {
+  font-style: italic;
+  font-size: 12px;
+}
+
+/*END COMMON CSS FOR JOB/ACTIVE/EDUCATION  */
+
+.job-description .italic span {
+  display: inline-block;
+  width: 68px;
+  padding: 0 8px;
+  background-color: #199cdb;
+  border-radius: 7px;
+  color: #ece9e9;
+  font-style: italic;
+}
+
+.skill-description p,
+.language-description p {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+/* underlined */
+
+/*create first line */
+.skill-description .underlined,
+.language-description .underlined {
+  position: relative;
+  width: 42px;
+  height: 3px;
+  top: -30px;
+  background-color: #199cdb;
+}
+
+/*create second line */
+.skill-description .underlined::before,
+.language-description .underlined::before {
+  position: absolute;
+  content: '';
+  width: 42px;
+  height: 3px;
+  top: 0px;
+  left: 55px;
+  background-color: #199cdb;
+}
+
+/*create third line */
+.skill-description .underlined::after,
+.language-description .underlined::after {
+  position: absolute;
+  content: '';
+  width: 42px;
+  height: 3px;
+  top: 0px;
+  left: 111px;
+  background-color: #199cdb;
+}
+
+/*active background #199cdb*/
+/* no active second and third line */
+.skill-description .underlined:last-child::before,
+.skill-description .underlined:last-child::after,
+.skill-description .underlined:nth-child(2)::before,
+.skill-description .underlined:nth-child(2)::after,
+.language-description .underlined:last-child::before,
+.language-description .underlined:last-child::after {
+  background-color: #f7f7f7;
+}
+
+/* no active second  line */
+.skill-description .underlined:nth-child(4)::after,
+.skill-description .underlined:nth-child(6)::after,
+.language-description .underlined:nth-child(2)::after {
+  background-color: #f7f7f7;
+}
+
+/*hobby css */
+.container .hobby p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #868e96;
+  line-height: 1.6;
+  margin-top: 32px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.container .hobby p span {
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #199cdb;
+}
+.container .hobby p span i {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #199cdb;
+}
+/* end hobby css */
+
+/* COMMON CSS FOR JOB INFO */
+.container .sub-container h2 {
+  padding: 16px 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.container .sub-container i {
+  font-size: 44px;
+  color: #adb5bd;
+  align-self: start;
+  justify-self: center;
+}
+
+.container .sub-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  border: 1px solid #c9cfd3;
+  padding: 28px;
+}
+
+.job-description,
+.skill-description,
+.language-description,
+.hobby {
+  grid-column: 1/-1;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 3px;
+  left: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #199cdb;
+}
+/*COMMON CSS FOR JOB INFO */
+
+/* CERTIFICATE CSS */
+#certificate {
+  padding: 48px 0;
+  margin-bottom: 28px;
+}
+
+#certificate .section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 48px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+/* two columns of grid*/
+#certificate .sub-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 80px;
+  border: 0;
+  padding: 0;
+  position: relative;
+}
+/* border bottom*/
+#certificate .sub-container::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 98%;
+  background-color: #d6c08d;
+}
+
+/* two columns of grid*/
+#certificate .sub-container > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#certificate .sub-container > div:first-child {
+  position: relative;
+}
+
+/* border right */
+#certificate .sub-container > div:first-child:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0.5px;
+  right: -20px;
+  height: 100%;
+  background-color: #d6c08d;
+}
+
+#certificate .sub-container img {
+  width: 100%;
+}
+
+#certificate .sub-container h3 {
+  font-size: 12px;
+  color: #484c4e;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+#certificate .sub-container p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #767d83;
+  border: 0;
+}
+/* END CERTIFICATE CSS */
+
+/*PROJECT CSS*/
+#project {
+  padding: 0 30px;
+}
+
+#project .section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+#project .sub-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  border: 0;
+  padding: 28px 0;
+}
+
+#project .sub-container > div {
+  border: 1px solid #c9cfd3;
+}
+
+#project .sub-container img {
+  width: 100%;
+  border-bottom: 1px solid #c9cfd3;
+}
+
+#project .sub-container .project-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 18px 0 18px 16px;
+  border-bottom: 1px solid #c9cfd3;
+}
+
+#project .sub-container .label-box {
+  padding: 12px 0 12px 16px;
+  color: #adb5bd;
+  font-weight: 500;
+  border-bottom: 1px solid #c9cfd3;
+}
+
+#project .sub-container .label-box span {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+#project .sub-container .label-box span:first-child {
+  background-color: #199cdb;
+  color: #f7f7f7;
+  padding: 3px 12px;
+  border-radius: 10px;
+}
+
+#project .sub-container .label-box span i {
+  font-size: 16px;
+  color: #868e96;
+  margin: 5px;
+}
+
+#project .sub-container table {
+  color: #868e96;
+  font-size: 14px;
+}
+
+#project .sub-container table tr {
+  display: inline-block;
+  padding: 8px;
+  vertical-align: top;
+  line-height: 1.6;
+  border-bottom: 1px solid #c9cfd3;
+}
+
+#project .sub-container table tr:last-child {
+  border: 0;
+}
+
+#project .sub-container table td:first-child {
+  width: 90px;
+}
+/* END PROJECT CSS*/
+
+/* FOOTER CSS */
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer ul li {
+  margin-right: 2.25rem;
+  list-style: none;
+  font-weight: 400;
+  color: #959ca3;
+  font-size: 0.875rem;
+}
+
+#footer ul a {
+  text-decoration: none;
+}
+
+#footer ul a i {
+  color: #199cdb;
+  font-size: 1.5rem;
+}
+/* END FOOTER CSS */
+
+/* destops <= 1200px */
+@media (max-width: 1200px) {
+  #project .sub-container .label-box span:last-child {
+    display: block;
+    margin-left: 68px;
+    position: relative;
+  }
+}
+
+/* Digital CV */
+
+.grid {
+  color: #212529;
+  margin: 20px;
+  padding: 20px;
+  background-color: #0000ff;
+  gap: 16px;
+  display: grid;
+
+  box-shadow: 0 0 16px rgba(0, 0, 0.1);
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid .title {
+  color: #0000ff;
+  margin: 12px;
+  font-size: 20px;
+}
+
+/* goals */
+.goals {
+  background-color: #edf2ff;
+  grid-column: 1/3;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.goals .content {
+  margin: 10px;
+}
+
+.goals .content-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.goals .content-box:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.goals .content-box > p {
+  margin: 10px 36px 10px 20px;
+}
+.goals .content-box > p > i {
+  font-size: 24px;
+}
+
+.goals .content-box > div > p {
+  margin-bottom: 10px;
+}
+.goals .content-box > div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* End goals */
+
+/* Team */
+.team {
+  background-color: #edf2ff;
+}
+
+.team .content {
+  margin: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.team .content-box {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.team .content-box > p {
+  margin: 10px 20px 10px 20px;
+}
+
+.team .content-box > p > i {
+  font-size: 20px;
+}
+
+.team .content-box > div > p,
+.team .content-box > div > h3 {
+  margin-bottom: 10px;
+}
+
+.team .content-box > div > h3 {
+  font-size: 15px;
+}
+
+.team .content-box > div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* End Team */
+
+/* Scope */
+.scopes {
+  grid-column: 1/3;
+
+  background-color: #edf2ff;
+  padding-bottom: 0px;
+}
+
+.scopes .content {
+  margin: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+.scopes .content-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scopes .content-box h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.scopes .content-box p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* End Scope */
+
+/* Timeline */
+.timeline {
+  grid-column: 4/-1;
+  grid-row: 1/3;
+  background-color: #edf2ff;
+  padding-bottom: 40px;
+}
+
+.timeline .content {
+  margin: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.timeline .content-box {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+.timeline .content-box > p {
+  margin: 10px 20px 10px 10px;
+  color: #fff;
+  border: 1px solid #949799;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  background-color: #9e88ff;
+}
+
+.timeline .content-box > div {
+  padding: 5px;
+  border-bottom: 1px dashed #228be6;
+}
+
+.timeline .content-box > div > p {
+  margin-bottom: 12px;
+}
+.timeline .content-box > div > p:first-child {
+  font-weight: 500;
+}
+
+.timeline .content-box > div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* End Time Line */
+
+/* Primary */
+
+.primary {
+  background-color: #edf2ff;
+}
+
+.primary .content {
+  margin: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary .content-box {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.primary .content-box > p {
+  margin: 8px 20px 10px 10px;
+}
+
+.primary .content-box > p > i {
+  font-size: 20px;
+}
+
+.primary .content-box > div > p {
+  margin-bottom: 10px;
+}
+.primary .content-box > div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* End Primary */
+
+/* End Digital CV */
